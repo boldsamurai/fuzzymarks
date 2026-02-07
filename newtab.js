@@ -924,11 +924,12 @@ function renderFolder(node, depth = 0) {
     const bookmarkCount = countBookmarks(node);
 
     if (showFolder) {
+      const displayName = getRootFolderName(node.id) || node.title;
       html += `
-        <div class="folder" data-folder-id="${node.id}" data-search="${escapeHtml(node.title.toLowerCase())}" data-name="${escapeHtml(node.title)}">
+        <div class="folder" data-folder-id="${node.id}" data-search="${escapeHtml(displayName.toLowerCase())}" data-name="${escapeHtml(displayName)}">
           <div class="folder-header" draggable="true" data-id="${node.id}">
             <span class="arrow">▶</span>
-            <span class="folder-name">${escapeHtml(node.title)}</span>
+            <span class="folder-name">${escapeHtml(displayName)}</span>
             <span class="count">${bookmarkCount}</span>
           </div>
           <div class="folder-content">

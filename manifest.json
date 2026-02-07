@@ -1,8 +1,18 @@
 {
   "manifest_version": 2,
-  "name": "Fuzzy Bookmarks New Tab",
-  "version": "1.0",
-  "description": "New tab page with fuzzy bookmark search",
+  "name": "FuzzyTab",
+  "version": "1.0.2",
+  "description": "New tab page with fuzzy bookmark search, Catppuccin themes, keyboard shortcuts, and pinned bookmarks bar.",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "fuzzytab@boldsamurai",
+      "strict_min_version": "109.0",
+      "data_collection_permissions": {
+        "required": ["none"],
+        "optional": []
+      }
+    }
+  },
   "permissions": [
     "bookmarks",
     "storage",
@@ -13,6 +23,7 @@
   },
   "icons": {
     "48": "icons/icon.svg",
-    "96": "icons/icon.svg"
+    "96": "icons/icon.svg",
+    "128": "icons/icon.svg"
   }
 }

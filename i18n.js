@@ -107,6 +107,7 @@ const TRANSLATIONS = {
 
     // Settings modal
     'settings.header': 'Settings',
+    'settings.support': 'Support FuzzyTab',
     'settings.close': 'Close (Esc)',
 
     // Settings nav
@@ -416,6 +417,7 @@ const TRANSLATIONS = {
 
     // Settings modal
     'settings.header': 'Ustawienia',
+    'settings.support': 'Wesprzyj FuzzyTab',
     'settings.close': 'Zamknij (Esc)',
 
     // Settings nav
