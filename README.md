@@ -103,18 +103,34 @@
 
 ## Installation
 
+### Firefox
 1. Download or clone this repository
 2. Open Firefox and go to `about:debugging#/runtime/this-firefox`
 3. Click **Load Temporary Add-on** and select `manifest.json`
 
-> For permanent installation, place the extension in your Firefox profile's `extensions/` directory.
+> For permanent installation, install from [Firefox Add-ons (AMO)](https://addons.mozilla.org) once available.
+
+### Chrome / Edge / Brave
+1. Run `bash build.sh` to generate the Chrome package, or download from Releases
+2. Open `chrome://extensions` and enable **Developer mode**
+3. Click **Load unpacked** and select the extracted Chrome build folder
+
+## Building
+
+```bash
+bash build.sh
+```
+
+Generates two zip files in `dist/`:
+- `fuzzymarks-firefox-<version>.zip` — Firefox (Manifest V3 + gecko settings)
+- `fuzzymarks-chrome-<version>.zip` — Chrome/Chromium (Manifest V3)
 
 ## Tech Stack
 
 - Vanilla JS — no frameworks, no build step
 - [fuzzysort](https://github.com/farzher/fuzzysort) for fuzzy matching
 - [Catppuccin](https://catppuccin.com) color palettes
-- Firefox WebExtensions API (Manifest V2)
+- WebExtensions API (Manifest V3) — Firefox + Chrome/Chromium
 
 ## License
 
