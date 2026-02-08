@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "FuzzyMarks",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "New tab page with fuzzy bookmark search, Catppuccin themes, keyboard shortcuts, and pinned bookmarks bar.",
   "permissions": [
     "bookmarks",
